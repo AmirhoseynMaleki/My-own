@@ -1,0 +1,235 @@
+@font-face {
+    font-family: 'Satoshi-Black';
+    src: url('fonts/Satoshi-Black.woff2') format('woff2'),
+        url('fonts/Satoshi-Black.woff') format('woff'),
+        url('fonts/Satoshi-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-display: swap;
+    font-style: normal;
+}
+
+body {
+    background-color: #fffcf2;
+    font-family: 'Satoshi-Black';
+}
+
+/* header */
+.logo {
+    width: 120px;
+}
+
+.head li {
+    padding: 12px;
+}
+
+.head li a {
+    padding: 15px;
+}
+
+.hover-underline {
+    position: relative;
+    display: inline-block;
+}
+
+.hover-underline::after {
+    content: "";
+    position: absolute;
+
+    width: 100%;
+    height: 2px;
+    /* Adjust the thickness of the line */
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    /* Change the color of the line */
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+    /* Adjust the speed of the transition */
+}
+
+.hover-underline:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    background-color: #573c27;
+}
+
+.hd1 {
+    color: #573c27;
+}
+
+.hd1:hover {
+    color: #573c27;
+}
+
+.button {
+    background-color: #573c27;
+    color: #fffcf2;
+    padding: 10px 25px;
+}
+
+.button:hover {
+    background-color: #a98360;
+    border: none;
+    color: #0d0d0d;
+}
+
+/* headerbottom */
+.hero h1 span {
+    background-color: #0a5e5b;
+    color: #fffcf2;
+    padding: 0 8px;
+    border-radius: 120px;
+}
+
+.hero p {
+    margin: 25px 0;
+}
+
+.story {
+    background-color: #0a5e5b;
+    color: #fffcf2;
+}
+
+.story:hover {
+    background-color: #558a78;
+}
+
+.resume {
+    background-color: #573c27;
+    color: #fffcf2;
+}
+
+.resume:hover {
+    background-color: #a98360;
+    color: #0d0d0d;
+}
+
+.right-pic {
+    width: 260px;
+    height: 320px;
+    border-radius: 130px;
+}
+
+.right-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.line {
+    height: 20px;
+    margin-top: 20px;
+
+}
+.line2 {
+    height: 50px;
+    margin-top: 20px;
+    background-color: #573c27;
+}
+
+.cstm {
+    margin-bottom: 100px;
+}
+
+/* carousel */
+
+.custom-card {
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 30px;
+    background-color: #573c27;
+    color: #fffcf2;
+}
+
+.custom-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: #a98360;
+    color: #0d0d0d;
+}
+
+.card-img-top {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.cs {
+    height: 350px;
+}
+
+.custom-bg {
+    background-color: #0a5e5b;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+/* .custom-heading {
+    background-color: #0a5e5b;
+    color: #fffcf2;
+    display: inline;
+    border-radius: 100px;
+    padding: 0 5px;
+} */
+
+.hd {
+    color: #573c27;
+}
+
+.txt-color {
+    color: #fffcf2;
+}
+
+.txt-color:hover {
+    color: #fffcf2;
+}
+
+.txt-color2 {
+    color: #9affdd;
+}
+
+.btn-color {
+    background-color: #573c27;
+    color: #fffcf2;
+    border: none;
+}
+
+.btn-color:hover {
+    background-color: #a98360;
+    color: #0d0d0d;
+}
+
+.skills {
+    margin-top: 150px;
+}
+
+.custom-card2 {
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 30px;
+    background-color: #0a5e5b;
+    /* Default background color */
+    color: #fffcf2;
+
+}
+
+.custom-card2:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    color: #0d0d0d;
+    background-color: #558a78;
+    /* Background color on hover */
+
+}
+
+.heading-bg {
+    background-color: #0a5e5b;
+    color: #fffcf2;
+}
+
+.bg-brown {
+    background-color: #573c27;
+}
